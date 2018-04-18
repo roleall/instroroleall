@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+	function pulaLinha () {
+		document.write("<br>");
+	}
+
+	function mostra (frase) {
+		document.write(frase);
+	}
+	function calculaConsumo (km , litros){
+		return (km/litros); 
+	}
+
+	var nome = prompt ("Informe seu nome");
+ 	var informeKm = prompt (nome + ", informe quantos Km rodou");
+	var informeLitros = prompt (nome + ", informe quantos litros foram abastecidos");
+
+	var comb = calculaConsumo (informeKm, informeLitros);
+		if (comb<=10) {
+			
+			document.write ("seu carro consome muito combustivel"); 
+			pulaLinha();
+
+	} 	else {
+		
+			document.write("Seu carro é muito bom");
+        	pulaLinha ();
+        }
+
+	mostra (nome + ", o seu consumo foi " + comb);
+</script>
